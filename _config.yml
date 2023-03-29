@@ -27,7 +27,7 @@ twitter_username: DanWadeCIPP
 github_username:  dwade6412
 
 # Build settings
-theme: minima
+remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
 minima:
