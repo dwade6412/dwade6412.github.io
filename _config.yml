@@ -32,7 +32,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 minima:
-skin: dark
+  skin: dark
 
 # Exclude from processing.
 # The following items will not be processed, by default.
