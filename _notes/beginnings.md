@@ -15,6 +15,7 @@ I've been struggling with a kind of writer's block/intellectual malaise for a li
 - Bad science
 - What happened to my curiosity?
 - How do I make this site look more [like this?](https://edwardtufte.github.io/tufte-css/)
+- What makes someone good at the craft of litigation?
 - [DHW WORKING]
 
 ### What am I trying to learn?
