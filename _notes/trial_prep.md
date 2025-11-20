@@ -28,6 +28,6 @@ An example of how this plays out: I can never remember when the nightly disclosu
 
 [DHW WORKING]
 
-[^1] An aside: good lord these guys tried to pull so much shit—so much so that the judge torched them on the record after the jury verdict was read. 
+[^1]: An aside: good lord these guys tried to pull so much shit—so much so that the judge torched them on the record after the jury verdict was read. 
 
 [[Beginnings]]
