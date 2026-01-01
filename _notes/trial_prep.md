@@ -20,7 +20,7 @@ A different colleague I really trust had this to say: one of the hardest things 
 
 Disclosure: **I suck at this!** This is easily the thing I am worst at. The number one piece of critical feedback I get is that while the work I do is good, it's often after the deadline I set for it. This does not feel good! As someone who takes it really personally when I let friends, family, and colleagues down, I feel like a total dick when it happens. Thus I am saying this as much to myself as anyone. 
 
-Thus, the ultimate conclusion: it's trite and reductive to say "preparation" is important but it is. But what's important is a different kind of preparation than what it seems like at first glance. You have to know what your weaknesses are and know how to [lol forgot to finish this sentence]
+Thus, the ultimate conclusion: it's trite and reductive to say "preparation" is important but it is. But what's important is a different kind of preparation than what it seems like at first glance. You have to know what your weaknesses are and know how to [lol forgot to finish this sentence but I'll get back to it]
 
 An example of how this plays out: I can never remember when the nightly disclosures are and what things have to go when. So, for my last trial, I did two things: (1) I made a quick-reference guide for the timings of the disclosures and how far ahead of time they had to be done, and (2) I took the (ever-evolving) plan and timetable that the team put together for trial, and then mapped out the disclosure tasks onto regular sheets of paper so that I could *see* (and not just think of) what had to get done when. Why? Because I suck at getting my tasks done on time if I don't get my list of tasks out of my head and onto something else (paper, a text file, etc.).
 
