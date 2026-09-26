@@ -5,7 +5,7 @@ id: home
 permalink: /
 ---
 
-# Welcome! 🌱
+# Welcome! 
 
 This is a work in progress. 
 
