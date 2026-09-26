@@ -1,0 +1,316 @@
+// Ported from tufte.css (edwardtufte/tufte-css, https://edwardtufte.github.io/tufte-css/)
+// Adapted for this site:
+//   - @font-face rules live separately in _fonts.scss (imported before this file)
+//   - colors reference this site's $color-* variables (forced dark, not
+//     gated behind prefers-color-scheme, per site owner's choice)
+//   - selectors target `section` inside the `<content>` wrapper used by
+//     this site's layouts (note.html / page.html), rather than raw <body>,
+//     since that's how the sidenote/margin grid below expects to measure
+//     paragraph width against the page
+//   - a few tufte.css rules were intentionally left out because this site
+//     already has its own version: `a` link styling, and `code`/`pre code`
+//     (handled by _code.scss's syntax-highlighting rules)
+
+body {
+  width: 87.5%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 12.5%;
+  background-color: $color-bg;
+  color: $color-text;
+  counter-reset: sidenote-counter;
+}
+
+@media (max-width: 760px) {
+  body {
+    width: 84%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+h1 {
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 2.1rem;
+  margin-bottom: 1.4rem;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+  line-height: 1;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 55%;
+  border: 0;
+  border-top: 1px solid $color-border;
+  margin: 1em 0;
+  padding: 0;
+}
+
+p.subtitle {
+  font-style: italic;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  display: block;
+  line-height: 1;
+}
+
+article {
+  padding: 5rem 0;
+}
+
+section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+p,
+dl,
+ol,
+ul {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+p {
+  margin: 1.4rem 0;
+}
+
+/* Epigraphs */
+div.epigraph {
+  margin: 5em 0;
+
+  > blockquote {
+    margin: 3em 0;
+    font-style: italic;
+
+    > footer {
+      font-style: normal;
+
+      > cite {
+        font-style: italic;
+      }
+    }
+  }
+}
+
+blockquote {
+  font-size: 1.4rem;
+
+  p {
+    width: 55%;
+    margin-right: 40px;
+  }
+
+  footer {
+    width: 55%;
+    font-size: 1.1rem;
+    text-align: right;
+  }
+}
+
+section > p,
+section > footer,
+section > table {
+  width: 55%;
+}
+
+section > dl,
+section > ol,
+section > ul {
+  width: 50%;
+  -webkit-padding-start: 5%;
+}
+
+dt:not(:first-child),
+li:not(:first-child) {
+  margin-top: 0.25rem;
+}
+
+figure {
+  padding: 0;
+  border: 0;
+  max-width: 55%;
+  margin: 0 0 3em 0;
+}
+
+figcaption {
+  float: right;
+  clear: right;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  position: relative;
+  max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+  margin-right: 24%;
+}
+
+/* Sidenotes / margin notes — CSS ready for step 3, no markup uses it yet */
+.sidenote,
+.marginnote {
+  float: right;
+  clear: right;
+  margin-right: -60%;
+  width: 50%;
+  margin-top: 0.3rem;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  position: relative;
+}
+
+.sidenote-number {
+  counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+  position: relative;
+  vertical-align: baseline;
+}
+
+.sidenote-number:after {
+  content: counter(sidenote-counter);
+  font-size: 1rem;
+  top: -0.5rem;
+  left: 0.1rem;
+}
+
+.sidenote:before {
+  content: counter(sidenote-counter) " ";
+  font-size: 1rem;
+  top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+  margin-right: -82%;
+  min-width: 59%;
+  text-align: left;
+}
+
+div.fullwidth,
+table.fullwidth {
+  width: 100%;
+}
+
+div.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+
+  th,
+  td {
+    text-align: left;
+    padding: 0.4em 0.8em 0.4em 0;
+    border-bottom: 1px solid $color-border;
+  }
+
+  thead th {
+    border-bottom: 2px solid $color-primary;
+    font-weight: 600;
+  }
+}
+
+span.newthought {
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
+
+input.margin-toggle {
+  display: none;
+}
+
+label.sidenote-number {
+  display: inline-block;
+  max-height: 2rem;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  hr,
+  section > p,
+  section > footer,
+  section > table {
+    width: 100%;
+  }
+
+  section > dl,
+  section > ol,
+  section > ul {
+    width: 90%;
+  }
+
+  figure {
+    max-width: 90%;
+  }
+
+  figcaption,
+  figure.fullwidth figcaption {
+    margin-right: 0;
+    max-width: none;
+  }
+
+  blockquote {
+    margin-left: 1.5em;
+    margin-right: 0;
+
+    p,
+    footer {
+      width: 100%;
+    }
+  }
+
+  label.margin-toggle:not(.sidenote-number) {
+    display: inline;
+  }
+
+  .sidenote,
+  .marginnote {
+    display: none;
+  }
+
+  .margin-toggle:checked + .sidenote,
+  .margin-toggle:checked + .marginnote {
+    display: block;
+    float: left;
+    left: 1rem;
+    clear: both;
+    width: 95%;
+    margin: 1rem 2.5%;
+    position: relative;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  div.table-wrapper,
+  table {
+    width: 85%;
+  }
+}
