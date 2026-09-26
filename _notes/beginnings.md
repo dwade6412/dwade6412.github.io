@@ -14,7 +14,7 @@ I've been struggling with a kind of writer's block/intellectual malaise for a li
     - Law is politics is law is politics
 - Bad science
 - What happened to my curiosity?
-- How do I make this site look more [like this?](https://edwardtufte.github.io/tufte-css/)
+- ~~How do I make this site look more [like this?](https://edwardtufte.github.io/tufte-css/)~~ UPDATE: done
 - What makes someone good at the craft of litigation?
 - [DHW WORKING]
 
